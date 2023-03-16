@@ -1,0 +1,4 @@
+1.	¿Qué es una API? 
+Una API es un conjunto de reglas y protocolos que permite la interacción entre diferentes sistemas de software. Las APIs facilitan la creación de aplicaciones y servicios al proporcionar una interfaz estandarizada y documentada para el intercambio de información y funcionalidades.
+2.	¿Qué es DOCTYPE HTML? 
+DOCTYPE HTML es una declaración que se utiliza al comienzo de un documento HTML para especificar la versión del lenguaje de marcado que se está utilizando y así permitir al navegador web interpretar el código correctamente. Esta declaración le indica al navegador que el documento sigue los estándares de HTML y CSS.
