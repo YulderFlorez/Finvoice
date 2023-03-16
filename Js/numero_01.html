@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Números impares</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<h1>Números impares mayores a 100 y menores a 150</h1>
+	<p id="numeros"></p>
+	<script>
+		var numerosImpares = "";
+		for (var i = 101; i <= 149; i += 2) {
+			numerosImpares += i + ", ";
+		}
+		document.getElementById("numeros").innerHTML = numerosImpares;
+	</script>
+</body>
+
+</html>

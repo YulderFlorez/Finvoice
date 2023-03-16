@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Filtrar Vehículos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>Vehículos con capacidad mayor a 10 y color azul</h1>
+    <ul id="vehiculos"></ul>
+    <script>
+        let vehiculos = [
+            { "color": "rojo", "marca": "bmw", "capacidad": 11 },
+            { "color": "azul", "marca": "fiat", "capacidad": 2 },
+            { "color": "negro", "marca": "hyundai", "capacidad": 6 },
+            { "color": "amarillo", "marca": "jeep", "capacidad": 15 },
+            { "color": "azul", "marca": "citroen", "capacidad": 20 },
+            { "color": "azul", "marca": "renault", "capacidad": 12 },
+            { "color": "rojo", "marca": "ford", "capacidad": 4 },
+            { "color": "gris", "marca": "toyota", "capacidad": 8 }
+        ];
+
+        let vehiculosFiltrados = vehiculos.filter(function (vehiculo) {
+            return vehiculo.capacidad > 10 && vehiculo.color === "azul";
+        });
+
+        let listaVehiculos = document.getElementById("vehiculos");
+        vehiculosFiltrados.forEach(function (vehiculo) {
+            let item = document.createElement("li");
+            item.innerHTML = vehiculo.marca + " - " + vehiculo.color + " - " + vehiculo.capacidad;
+            listaVehiculos.appendChild(item);
+        });
+    </script>
+</body>
+
+</html>
